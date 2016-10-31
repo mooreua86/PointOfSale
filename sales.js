@@ -4,7 +4,7 @@ function addItem()
 {
   var newItem;
   newItem = document.getElementById("price").value;
-  if (isNaN) {
+  if (isNaN(newItem)) {
     alert("Enter price as a number");
   }
 
@@ -15,7 +15,7 @@ function addItem()
   document.getElementById("subtotal").innerHTML = dollars;
   newItem = document.getElementById("price").value = "";
   setCookie("preTax",runningTotal, 1);
-  
+
   //IF newItem is not a number
   // THEN show an alert: "Enter price as a number"
   //OTHERWISE,
