@@ -63,6 +63,6 @@ function calculateReceipt() {
   var receiptTax = receiptSubtotal * 0.075;
   var receiptTotal = receiptSubtotal + receiptTax;
   document.getElementById("sub").innerHTML = "$" + receiptSubtotal.toFixed(2);
-  document.getElementById("tax").innerHTML = "$" + receiptSubtotal.toFixed(2);
-  document.getElementById("tot").innerHTML = "$" + receiptSubtotal.toFixed(2);
+  document.getElementById("tax").innerHTML = "$" + receiptTax.toFixed(2);
+  document.getElementById("tot").innerHTML = "$" + receiptTotal.toFixed(2);
 }
